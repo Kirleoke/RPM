@@ -1,11 +1,10 @@
 def input_valid():
-    pass #Роман
-
+    pass #Алеша
 def x2():
-    pass #Саня
+    pass #-
 
 def x3_1():
-    pass #Кирилл
+    pass #-
 
 def collatz(x):
     if x == 1:

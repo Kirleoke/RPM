@@ -1,20 +1,16 @@
 def input_valid():
-    pass #Роман
+    pass
 
-def x2():
-    pass #Саня
+def x2(x):
+    x = x / 2
+    sp.append(int(x))
+    return collatz(x)
 
 def x3_1():
-    pass #Кирилл
+    pass
 
 def collatz(x):
-    if x == 1:
-        sp.append(x)
-        return x
-    elif x % 2 == 0:
-        return x2(x)
-    else:
-        return x3_1(x)
+    pass
 
 print ('Список имеет вид: '+str(x))
 sp = []

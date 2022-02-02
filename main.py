@@ -1,18 +1,32 @@
-import math
-print("Введите коэффициенты для уравнения")
-print("ax^2 + bx + c = 0:")
-a = float(input("a = "))
-b = float(input("b = "))
-c = float(input("c = "))
+def input_valid():
+    while True:
+        x = int(input("Введите переменную x = "))
+        if x > 0:
+            collatz(x)
+            break
+        print("Неверное число, попробуйте другое")
+    return x
 
-discr = b ** 2 - 4 * a * c
+def x2():
+    pass #Саня
 
-if discr > 0:
-    x1 = (-b + math.sqrt(discr)) / (2 * a)
-    x2 = (-b - math.sqrt(discr)) / (2 * a)
-    print("x1 = "+str(x1)+" x2 = "+str(x2))
-elif discr == 0:
-    x = -b / (2 * a)
-    print("x = "+str(x))
-else:
-    print("Корней нет")
+def x3_1(x):
+    x = x * 3 + 1
+    sp.append(int(x))
+    return collatz(x)
+
+def collatz(x):
+    if x in sp:
+        print ('Значение уже есть в списке')
+        return input_valid()
+    while x != 1:
+        sp.append(x)
+        return x
+    elif x % 2 == 0:
+        return x2(x)
+    else:
+        return x3_1(x)
+
+print ('Список имеет вид: '+str(x))
+sp = []
+input_valid()
